@@ -8,7 +8,7 @@
 import XCTest
 @testable import TabBar2_0
 
-class TabBar2_0Tests: XCTestCase {
+class FindmovieTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

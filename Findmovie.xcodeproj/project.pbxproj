@@ -13,9 +13,13 @@
 		A63B185327377E1500F51311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63B185127377E1500F51311 /* Main.storyboard */; };
 		A63B185527377E1A00F51311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63B185427377E1A00F51311 /* Assets.xcassets */; };
 		A63B185827377E1A00F51311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63B185627377E1A00F51311 /* LaunchScreen.storyboard */; };
-		A63B186327377E1B00F51311 /* TabBar2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B186227377E1B00F51311 /* TabBar2_0Tests.swift */; };
-		A63B186D27377E1B00F51311 /* TabBar2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B186C27377E1B00F51311 /* TabBar2_0UITests.swift */; };
-		A63B186F27377E1B00F51311 /* TabBar2_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B186E27377E1B00F51311 /* TabBar2_0UITestsLaunchTests.swift */; };
+		A63B186327377E1B00F51311 /* FindmovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B186227377E1B00F51311 /* FindmovieTests.swift */; };
+		A63B186D27377E1B00F51311 /* FindmovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B186C27377E1B00F51311 /* FindmovieUITests.swift */; };
+		A63B186F27377E1B00F51311 /* FindmovieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B186E27377E1B00F51311 /* FindmovieUITestsLaunchTests.swift */; };
+		A63B187C273784A800F51311 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B187B273784A700F51311 /* CustomTabBarController.swift */; };
+		A63B187E2738649100F51311 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B187D2738649100F51311 /* HomeVC.swift */; };
+		A63B1880273864B100F51311 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B187F273864B100F51311 /* SearchVC.swift */; };
+		A63B1882273864EA00F51311 /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B1881273864EA00F51311 /* FavoriteVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A63B184827377E1500F51311 /* TabBar2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBar2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63B184827377E1500F51311 /* Findmovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Findmovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63B184B27377E1500F51311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A63B184D27377E1500F51311 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A63B184F27377E1500F51311 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,11 +48,15 @@
 		A63B185427377E1A00F51311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A63B185727377E1A00F51311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A63B185927377E1A00F51311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A63B185E27377E1B00F51311 /* TabBar2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBar2.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A63B186227377E1B00F51311 /* TabBar2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar2_0Tests.swift; sourceTree = "<group>"; };
-		A63B186827377E1B00F51311 /* TabBar2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBar2.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A63B186C27377E1B00F51311 /* TabBar2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar2_0UITests.swift; sourceTree = "<group>"; };
-		A63B186E27377E1B00F51311 /* TabBar2_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar2_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A63B185E27377E1B00F51311 /* FindmovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindmovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63B186227377E1B00F51311 /* FindmovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindmovieTests.swift; sourceTree = "<group>"; };
+		A63B186827377E1B00F51311 /* FindmovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindmovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63B186C27377E1B00F51311 /* FindmovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindmovieUITests.swift; sourceTree = "<group>"; };
+		A63B186E27377E1B00F51311 /* FindmovieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindmovieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A63B187B273784A700F51311 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		A63B187D2738649100F51311 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		A63B187F273864B100F51311 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		A63B1881273864EA00F51311 /* FavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +87,9 @@
 		A63B183F27377E1500F51311 = {
 			isa = PBXGroup;
 			children = (
-				A63B184A27377E1500F51311 /* TabBar2.0 */,
-				A63B186127377E1B00F51311 /* TabBar2.0Tests */,
-				A63B186B27377E1B00F51311 /* TabBar2.0UITests */,
+				A63B184A27377E1500F51311 /* Findmovie */,
+				A63B186127377E1B00F51311 /* FindmovieTests */,
+				A63B186B27377E1B00F51311 /* FindmovieUITests */,
 				A63B184927377E1500F51311 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,14 +97,14 @@
 		A63B184927377E1500F51311 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A63B184827377E1500F51311 /* TabBar2.0.app */,
-				A63B185E27377E1B00F51311 /* TabBar2.0Tests.xctest */,
-				A63B186827377E1B00F51311 /* TabBar2.0UITests.xctest */,
+				A63B184827377E1500F51311 /* Findmovie.app */,
+				A63B185E27377E1B00F51311 /* FindmovieTests.xctest */,
+				A63B186827377E1B00F51311 /* FindmovieUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A63B184A27377E1500F51311 /* TabBar2.0 */ = {
+		A63B184A27377E1500F51311 /* Findmovie */ = {
 			isa = PBXGroup;
 			children = (
 				A63B184B27377E1500F51311 /* AppDelegate.swift */,
@@ -106,33 +114,37 @@
 				A63B185427377E1A00F51311 /* Assets.xcassets */,
 				A63B185627377E1A00F51311 /* LaunchScreen.storyboard */,
 				A63B185927377E1A00F51311 /* Info.plist */,
+				A63B187B273784A700F51311 /* CustomTabBarController.swift */,
+				A63B187D2738649100F51311 /* HomeVC.swift */,
+				A63B187F273864B100F51311 /* SearchVC.swift */,
+				A63B1881273864EA00F51311 /* FavoriteVC.swift */,
 			);
-			path = TabBar2.0;
+			path = Findmovie;
 			sourceTree = "<group>";
 		};
-		A63B186127377E1B00F51311 /* TabBar2.0Tests */ = {
+		A63B186127377E1B00F51311 /* FindmovieTests */ = {
 			isa = PBXGroup;
 			children = (
-				A63B186227377E1B00F51311 /* TabBar2_0Tests.swift */,
+				A63B186227377E1B00F51311 /* FindmovieTests.swift */,
 			);
-			path = TabBar2.0Tests;
+			path = FindmovieTests;
 			sourceTree = "<group>";
 		};
-		A63B186B27377E1B00F51311 /* TabBar2.0UITests */ = {
+		A63B186B27377E1B00F51311 /* FindmovieUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A63B186C27377E1B00F51311 /* TabBar2_0UITests.swift */,
-				A63B186E27377E1B00F51311 /* TabBar2_0UITestsLaunchTests.swift */,
+				A63B186C27377E1B00F51311 /* FindmovieUITests.swift */,
+				A63B186E27377E1B00F51311 /* FindmovieUITestsLaunchTests.swift */,
 			);
-			path = TabBar2.0UITests;
+			path = FindmovieUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A63B184727377E1500F51311 /* TabBar2.0 */ = {
+		A63B184727377E1500F51311 /* Findmovie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A63B187227377E1B00F51311 /* Build configuration list for PBXNativeTarget "TabBar2.0" */;
+			buildConfigurationList = A63B187227377E1B00F51311 /* Build configuration list for PBXNativeTarget "Findmovie" */;
 			buildPhases = (
 				A63B184427377E1500F51311 /* Sources */,
 				A63B184527377E1500F51311 /* Frameworks */,
@@ -142,14 +154,14 @@
 			);
 			dependencies = (
 			);
-			name = TabBar2.0;
+			name = Findmovie;
 			productName = TabBar2.0;
-			productReference = A63B184827377E1500F51311 /* TabBar2.0.app */;
+			productReference = A63B184827377E1500F51311 /* Findmovie.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A63B185D27377E1B00F51311 /* TabBar2.0Tests */ = {
+		A63B185D27377E1B00F51311 /* FindmovieTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A63B187527377E1B00F51311 /* Build configuration list for PBXNativeTarget "TabBar2.0Tests" */;
+			buildConfigurationList = A63B187527377E1B00F51311 /* Build configuration list for PBXNativeTarget "FindmovieTests" */;
 			buildPhases = (
 				A63B185A27377E1B00F51311 /* Sources */,
 				A63B185B27377E1B00F51311 /* Frameworks */,
@@ -160,14 +172,14 @@
 			dependencies = (
 				A63B186027377E1B00F51311 /* PBXTargetDependency */,
 			);
-			name = TabBar2.0Tests;
+			name = FindmovieTests;
 			productName = TabBar2.0Tests;
-			productReference = A63B185E27377E1B00F51311 /* TabBar2.0Tests.xctest */;
+			productReference = A63B185E27377E1B00F51311 /* FindmovieTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A63B186727377E1B00F51311 /* TabBar2.0UITests */ = {
+		A63B186727377E1B00F51311 /* FindmovieUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A63B187827377E1B00F51311 /* Build configuration list for PBXNativeTarget "TabBar2.0UITests" */;
+			buildConfigurationList = A63B187827377E1B00F51311 /* Build configuration list for PBXNativeTarget "FindmovieUITests" */;
 			buildPhases = (
 				A63B186427377E1B00F51311 /* Sources */,
 				A63B186527377E1B00F51311 /* Frameworks */,
@@ -178,9 +190,9 @@
 			dependencies = (
 				A63B186A27377E1B00F51311 /* PBXTargetDependency */,
 			);
-			name = TabBar2.0UITests;
+			name = FindmovieUITests;
 			productName = TabBar2.0UITests;
-			productReference = A63B186827377E1B00F51311 /* TabBar2.0UITests.xctest */;
+			productReference = A63B186827377E1B00F51311 /* FindmovieUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +218,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A63B184327377E1500F51311 /* Build configuration list for PBXProject "TabBar2.0" */;
+			buildConfigurationList = A63B184327377E1500F51311 /* Build configuration list for PBXProject "Findmovie" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +231,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A63B184727377E1500F51311 /* TabBar2.0 */,
-				A63B185D27377E1B00F51311 /* TabBar2.0Tests */,
-				A63B186727377E1B00F51311 /* TabBar2.0UITests */,
+				A63B184727377E1500F51311 /* Findmovie */,
+				A63B185D27377E1B00F51311 /* FindmovieTests */,
+				A63B186727377E1B00F51311 /* FindmovieUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,8 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63B1880273864B100F51311 /* SearchVC.swift in Sources */,
 				A63B185027377E1500F51311 /* ViewController.swift in Sources */,
+				A63B187E2738649100F51311 /* HomeVC.swift in Sources */,
 				A63B184C27377E1500F51311 /* AppDelegate.swift in Sources */,
+				A63B187C273784A800F51311 /* CustomTabBarController.swift in Sources */,
+				A63B1882273864EA00F51311 /* FavoriteVC.swift in Sources */,
 				A63B184E27377E1500F51311 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A63B186327377E1B00F51311 /* TabBar2_0Tests.swift in Sources */,
+				A63B186327377E1B00F51311 /* FindmovieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A63B186F27377E1B00F51311 /* TabBar2_0UITestsLaunchTests.swift in Sources */,
-				A63B186D27377E1B00F51311 /* TabBar2_0UITests.swift in Sources */,
+				A63B186F27377E1B00F51311 /* FindmovieUITestsLaunchTests.swift in Sources */,
+				A63B186D27377E1B00F51311 /* FindmovieUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,12 +302,12 @@
 /* Begin PBXTargetDependency section */
 		A63B186027377E1B00F51311 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A63B184727377E1500F51311 /* TabBar2.0 */;
+			target = A63B184727377E1500F51311 /* Findmovie */;
 			targetProxy = A63B185F27377E1B00F51311 /* PBXContainerItemProxy */;
 		};
 		A63B186A27377E1B00F51311 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A63B184727377E1500F51311 /* TabBar2.0 */;
+			target = A63B184727377E1500F51311 /* Findmovie */;
 			targetProxy = A63B186927377E1B00F51311 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -440,7 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TabBar2.0/Info.plist;
+				INFOPLIST_FILE = Findmovie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -451,7 +467,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kaungthukhantmmaniad.TabBar2-0";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaungthukhantmmaniad.Findmovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -467,7 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TabBar2.0/Info.plist;
+				INFOPLIST_FILE = Findmovie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -478,7 +494,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kaungthukhantmmaniad.TabBar2-0";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaungthukhantmmaniad.Findmovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -506,7 +522,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabBar2.0.app/TabBar2.0";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Findmovie.app/Findmovie";
 			};
 			name = Debug;
 		};
@@ -530,7 +546,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabBar2.0.app/TabBar2.0";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Findmovie.app/Findmovie";
 			};
 			name = Release;
 		};
@@ -581,7 +597,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A63B184327377E1500F51311 /* Build configuration list for PBXProject "TabBar2.0" */ = {
+		A63B184327377E1500F51311 /* Build configuration list for PBXProject "Findmovie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A63B187027377E1B00F51311 /* Debug */,
@@ -590,7 +606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A63B187227377E1B00F51311 /* Build configuration list for PBXNativeTarget "TabBar2.0" */ = {
+		A63B187227377E1B00F51311 /* Build configuration list for PBXNativeTarget "Findmovie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A63B187327377E1B00F51311 /* Debug */,
@@ -599,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A63B187527377E1B00F51311 /* Build configuration list for PBXNativeTarget "TabBar2.0Tests" */ = {
+		A63B187527377E1B00F51311 /* Build configuration list for PBXNativeTarget "FindmovieTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A63B187627377E1B00F51311 /* Debug */,
@@ -608,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A63B187827377E1B00F51311 /* Build configuration list for PBXNativeTarget "TabBar2.0UITests" */ = {
+		A63B187827377E1B00F51311 /* Build configuration list for PBXNativeTarget "FindmovieUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A63B187927377E1B00F51311 /* Debug */,

@@ -7,7 +7,7 @@
 
 import XCTest
 
-class TabBar2_0UITestsLaunchTests: XCTestCase {
+class FindmovieUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
