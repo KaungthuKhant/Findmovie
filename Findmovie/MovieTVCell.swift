@@ -39,7 +39,7 @@ class MovieTVCell: UITableViewCell {
         }
         let data = try! Data(contentsOf: URL(string: url)!)
         self.posterImageView.image = UIImage(data: data)
-        //let voteAvg = (".2f", model.vote_average)*/
+        */
         self.ratingLabel.text = "\(model.vote_average)"
     }
     
