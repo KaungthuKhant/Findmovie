@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6211C1A2745EE4B00538846 /* MovieTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6211C182745EE4B00538846 /* MovieTVCell.swift */; };
+		A6211C1B2745EE4B00538846 /* MovieTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6211C192745EE4B00538846 /* MovieTVCell.xib */; };
 		A63B184C27377E1500F51311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B184B27377E1500F51311 /* AppDelegate.swift */; };
 		A63B184E27377E1500F51311 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B184D27377E1500F51311 /* SceneDelegate.swift */; };
 		A63B185027377E1500F51311 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B184F27377E1500F51311 /* ViewController.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A6211C182745EE4B00538846 /* MovieTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTVCell.swift; sourceTree = "<group>"; };
+		A6211C192745EE4B00538846 /* MovieTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTVCell.xib; sourceTree = "<group>"; };
 		A63B184827377E1500F51311 /* Findmovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Findmovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63B184B27377E1500F51311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A63B184D27377E1500F51311 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				A63B187D2738649100F51311 /* HomeVC.swift */,
 				A63B187F273864B100F51311 /* SearchVC.swift */,
 				A63B1881273864EA00F51311 /* FavoriteVC.swift */,
+				A6211C182745EE4B00538846 /* MovieTVCell.swift */,
+				A6211C192745EE4B00538846 /* MovieTVCell.xib */,
 			);
 			path = Findmovie;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 			files = (
 				A63B185827377E1A00F51311 /* LaunchScreen.storyboard in Resources */,
 				A63B185527377E1A00F51311 /* Assets.xcassets in Resources */,
+				A6211C1B2745EE4B00538846 /* MovieTVCell.xib in Resources */,
 				A63B185327377E1500F51311 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +283,7 @@
 				A63B184C27377E1500F51311 /* AppDelegate.swift in Sources */,
 				A63B187C273784A800F51311 /* CustomTabBarController.swift in Sources */,
 				A63B1882273864EA00F51311 /* FavoriteVC.swift in Sources */,
+				A6211C1A2745EE4B00538846 /* MovieTVCell.swift in Sources */,
 				A63B184E27377E1500F51311 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
