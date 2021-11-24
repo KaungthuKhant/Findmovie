@@ -90,28 +90,6 @@ class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
         case error(Error)
     }
     
-    /*
-    func searchMovies(completionHandler: @escaping (Result) -> Void) {
-        let url = URL(string: "https://api.themoviedb.org/3/search/movie?api_key=cefa557c9e390fe95c90c906a05d79f1&query=the+avengers")!
-        let request = URLRequest(url: url)
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if let error = error {
-                completionHandler(.error(error))
-                return
-            }
-            let response = response as! HTTPURLResponse
-            let data = data!
-            guard response.statusCode == 200, ["application/json"].contains(response.mimeType ?? "") else {
-                completionHandler(.badResponse(response))
-                return
-            }
-            completionHandler(.success(data))
-            print("success")
-        }
-        task.resume()
-    }
-     */
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
     }

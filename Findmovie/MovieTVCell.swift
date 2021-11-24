@@ -35,7 +35,7 @@ class MovieTVCell: UITableViewCell {
         self.yearAndGenreLabel.text = model.release_date
         /*
         var ppath = ""
-        if let url = model.poster_path else {
+        guard let url = model.poster_path else {
             ppath = "/3o7MpOaDkeAcvxqEjgbIcXrcepB.jpg"
         }
         let data = try! Data(contentsOf: URL(string: url)!)
