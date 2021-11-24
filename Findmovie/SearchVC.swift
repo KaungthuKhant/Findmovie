@@ -97,5 +97,4 @@ struct Movie: Codable{
     private enum CodingKeys: String, CodingKey{
         case Title, Year, imdbID, _Type = "Type", Poster
     }
-    
 }
