@@ -42,8 +42,6 @@ class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
         
         movies.removeAll()
         
-        //let url = URL(string: "https://api.themoviedb.org/3/search/movie?api_key=cefa557c9e390fe95c90c906a05d79f1&query=\(query)")
-        
         URLSession.shared.dataTask(with: URL(string: "https://api.themoviedb.org/3/search/movie?api_key=cefa557c9e390fe95c90c906a05d79f1&query=\(query)")!,
                                    completionHandler: {data, response, error in
                                     guard let data = data, error == nil else {

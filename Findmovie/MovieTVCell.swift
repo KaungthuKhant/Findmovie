@@ -33,6 +33,16 @@ class MovieTVCell: UITableViewCell {
     func configure(with model: Movie){
         self.titleLabel.text = model.original_title
         self.yearAndGenreLabel.text = model.release_date
+        if let path = model.poster_path {
+            let url = "https://image.tmdb.org/t/p/w500/\(path)"
+            let data = try! Data(contentsOf: URL(string: url)!)
+            self.posterImageView.image = UIImage(data: data)
+        }
+        else{
+            let url = "https://image.tmdb.org/t/p/w500//nNmJRkg8wWnRmzQDe2FwKbPIsJV.jpg"
+            let data = try! Data(contentsOf: URL(string: url)!)
+            self.posterImageView.image = UIImage(data: data)
+        }
         /*
         var ppath = ""
         guard let url = model.poster_path else {
