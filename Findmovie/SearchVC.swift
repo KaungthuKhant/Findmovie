@@ -127,6 +127,11 @@ class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
         tableView.deselectRow(at: indexPath, animated: true)
         // show movie detail
     }
+    
+    // set the height of the cell
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
 
 
 }

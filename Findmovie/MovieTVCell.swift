@@ -34,13 +34,14 @@ class MovieTVCell: UITableViewCell {
         self.titleLabel.text = model.original_title
         self.yearAndGenreLabel.text = model.release_date
         /*
-        guard let url = model.poster_path else {
-            return
+        var ppath = ""
+        if let url = model.poster_path else {
+            ppath = "/3o7MpOaDkeAcvxqEjgbIcXrcepB.jpg"
         }
         let data = try! Data(contentsOf: URL(string: url)!)
         self.posterImageView.image = UIImage(data: data)
         */
-        self.ratingLabel.text = "\(model.vote_average)"
+         self.ratingLabel.text = "\(model.vote_average)"
     }
     
 }
