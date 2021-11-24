@@ -11,12 +11,12 @@
         <!--Home-->
         <scene sceneID="yUD-F6-ggq">
             <objects>
-                <viewController id="v7J-j7-6Yi" customClass="HomeVC" customModule="TabBar2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="v7J-j7-6Yi" customClass="HomeVC" customModule="Findmovie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eyy-7E-jbv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="nUa-gl-XbU"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" red="0.18907435253413041" green="0.033841238543210139" blue="0.06414396436625254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="Vph-vl-OBP">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -29,7 +29,7 @@
         <!--FavoriteVC-->
         <scene sceneID="qt3-Cm-yb2">
             <objects>
-                <viewController id="tC1-dU-Vr1" customClass="FavoriteVC" customModule="TabBar2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tC1-dU-Vr1" customClass="FavoriteVC" customModule="Findmovie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EYK-gd-S6O">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,11 +47,11 @@
         <!--Custom Tab Bar Controller-->
         <scene sceneID="EuD-G6-9Xk">
             <objects>
-                <tabBarController id="AO0-R6-S1W" customClass="CustomTabBarController" customModule="TabBar2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="AO0-R6-S1W" customClass="CustomTabBarController" customModule="Findmovie" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="JLH-Zy-jtH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <userDefinedRuntimeAttributes>
@@ -72,7 +72,7 @@
         <!--SearchVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SearchVC" customModule="TabBar2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SearchVC" customModule="Findmovie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,9 +122,6 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
