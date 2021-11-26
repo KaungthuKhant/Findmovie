@@ -111,7 +111,6 @@ class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
             }
         }).resume()
     }
-     
     
     enum Result{
         case success(Data)
@@ -139,7 +138,6 @@ class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
-    
 
 
 }
