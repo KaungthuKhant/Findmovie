@@ -40,8 +40,6 @@ class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
             return
         }
         
-        print(text)
-        
         let query = text.replacingOccurrences(of: " ", with: "+")
         
         movies.removeAll()
@@ -69,11 +67,6 @@ class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
             }
             
             self.moviesList = finalResult.results
-            
-            print("It works: ")
-            print(finalResult.results[0].original_title)
-            print(finalResult.results[1].original_title)
-            print(finalResult.results[2].original_title)
             
             let newMovies = finalResult.results
             self.movies.append(contentsOf: newMovies)
@@ -133,7 +126,6 @@ class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //print("this function is called")
         let cell = tableView.dequeueReusableCell(withIdentifier: MovieTVCell.identifier, for: indexPath) as! MovieTVCell
         cell.configure(with: movies[indexPath.row])
         return cell
@@ -143,7 +135,6 @@ class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
         tableView.deselectRow(at: indexPath, animated: true)
         
         imdb(movieID: moviesList[indexPath.row].id)
-        
     }
     
     // set the height of the cell
