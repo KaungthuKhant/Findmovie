@@ -14,7 +14,6 @@ class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     @IBOutlet var table: UITableView!
     @IBOutlet var field: UITextField!
     
-    
     var movies = [Movie]()
     var moviesList = [Movie]()
     
