@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
     
@@ -13,7 +14,10 @@ class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     @IBOutlet var table: UITableView!
     @IBOutlet var field: UITextField!
     
+    
+    
     var movies = [Movie]()
+    var moviesList = [Movie]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +68,8 @@ class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
                 return
             }
             
+            self.moviesList = finalResult.results
+            
             print("It works: ")
             print(finalResult.results[0].original_title)
             print(finalResult.results[1].original_title)
@@ -79,6 +85,40 @@ class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
             
         }).resume()
         
+    }
+    
+    
+    func imdb(movieID: Int){
+        URLSession.shared.dataTask(with: URL(string: "https://api.themoviedb.org/3/movie/\(movieID)?api_key=cefa557c9e390fe95c90c906a05d79f1&language=en-US")!, completionHandler: {data, response, error in
+            guard let data = data, error == nil else{
+                print("error in searching for imdb id")
+                return
+            }
+            var movieIMDBID: imdbResult?
+            do {
+                movieIMDBID = try JSONDecoder().decode(imdbResult.self, from: data)
+            }
+            catch {
+                print("error \(error)")
+            }
+            
+            guard let finalID = movieIMDBID else{
+                return
+            }
+            
+            // to go around the error of Ambiguous use of 'dispatch_get_main_queue()'
+            // cause from Xcode UIView.init(frame:) must be used from main thread only error
+            DispatchQueue.global(qos: .background).async {
+
+                // Background Thread
+
+                DispatchQueue.main.async {
+                    let url = "https://www.imdb.com/title/\(finalID.imdb_id)"
+                    let vc = SFSafariViewController(url: URL(string: url)!)
+                    self.present(vc, animated: true)
+                }
+            }
+        }).resume()
     }
      
     
@@ -101,13 +141,16 @@ class SearchVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        // show movie detail
+        
+        imdb(movieID: moviesList[indexPath.row].id)
+        
     }
     
     // set the height of the cell
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
+    
 
 
 }
@@ -121,4 +164,15 @@ struct Movie: Codable{
     let release_date: String
     let vote_average: Float
     let poster_path: String?
+    let id: Int
 }
+
+struct imdbResult: Codable{
+    let imdb_id: String
+}
+
+
+
+
+
+
