@@ -49,6 +49,12 @@ class HomeVC: UIViewController {
             print("testing")
             print(finalResult.page)
             print(newMovies[0].original_title!)
+            if (newMovies[1].original_title == nil){
+                print(newMovies[1].original_name!)
+            }
+            else{
+                print(newMovies[1].original_name!)
+            }
             
         }).resume()
         
@@ -66,5 +72,6 @@ struct TrendingMovie: Codable{
     let release_date: String?
     let vote_average: Float?
     let poster_path: String?
+    let original_name: String?
     let id: Int
 }
