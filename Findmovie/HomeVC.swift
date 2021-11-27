@@ -55,7 +55,6 @@ class HomeVC: UIViewController {
             else{
                 print(newMovies[1].original_name!)
             }
-            
         }).resume()
         
     }
