@@ -8,10 +8,63 @@
 import UIKit
 
 class HomeVC: UIViewController {
-
+    
+    var moviesList = [TrendingMovie]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchMovies()
     }
     
     // show trending movies
+    
+    
+    func searchMovies(){
+        URLSession.shared.dataTask(with: URL(string: "https://api.themoviedb.org/3/trending/all/day?api_key=cefa557c9e390fe95c90c906a05d79f1")!,
+                                   completionHandler: {data, response, error in
+                                    guard let data = data, error == nil else {
+                                        print("error")
+                                        return
+                                    }
+            var result: TrendingMovieResult?
+            // decode json into swift
+            // data contains the info from API
+            // decode that into MovieResult format
+            // assign that formated data to result
+            do {
+                result = try JSONDecoder().decode(TrendingMovieResult.self, from: data)
+            }
+            catch {
+                print("error \(error)")
+            }
+            
+            guard let finalResult = result else{
+                return
+            }
+            
+            self.moviesList = finalResult.results
+            
+            let newMovies = finalResult.results
+            //self.movies.append(contentsOf: newMovies)
+            print("testing")
+            print(finalResult.page)
+            print(newMovies[0].original_title!)
+            
+        }).resume()
+        
+    }
+}
+
+
+
+struct TrendingMovieResult: Codable {
+    let page: Int
+    var results: [TrendingMovie] = []
+}
+struct TrendingMovie: Codable{
+    let original_title: String?
+    let release_date: String?
+    let vote_average: Float?
+    let poster_path: String?
+    let id: Int
 }
