@@ -9,6 +9,12 @@ import UIKit
 
 class HomeVC: UIViewController {
     
+    private let tableView: UITableView = {
+            let table = UITableView()
+            table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+            return table
+        }()
+    
     var moviesList = [TrendingMovie]()
     
     override func viewDidLoad() {
