@@ -58,8 +58,6 @@ class HomeVC: UIViewController {
     }
 }
 
-
-
 struct TrendingMovieResult: Codable {
     let page: Int
     var results: [TrendingMovie] = []
