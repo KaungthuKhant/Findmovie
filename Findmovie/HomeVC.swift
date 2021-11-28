@@ -17,8 +17,6 @@ class HomeVC: UIViewController {
     }
     
     // show trending movies
-    
-    
     func searchMovies(){
         URLSession.shared.dataTask(with: URL(string: "https://api.themoviedb.org/3/trending/all/day?api_key=cefa557c9e390fe95c90c906a05d79f1")!,
                                    completionHandler: {data, response, error in
