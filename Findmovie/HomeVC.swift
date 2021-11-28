@@ -5,9 +5,9 @@
 //  Created by Kaung Thu Khant on 11/6/21.
 //
 
-import SwiftUI
+import UIKit
 
-
+/*
 struct ContentView: View {
     var body: some View{
         NavigationView{
@@ -28,7 +28,7 @@ struct ContentViewPreview: PreviewProvider{
     }
 }
 
-
+*/
 
 class HomeVC: UIViewController {
     
