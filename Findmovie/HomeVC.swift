@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: UIViewController, UITableViewDataSource {
     
     private let tableView: UITableView = {
             let table = UITableView()
@@ -19,9 +19,21 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(tableView)
+        tableView.dataSource = self
         searchMovies()
     }
     
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "Hello World"
+        return cell
+    }
     // show trending movies
     func searchMovies(){
         URLSession.shared.dataTask(with: URL(string: "https://api.themoviedb.org/3/trending/all/day?api_key=cefa557c9e390fe95c90c906a05d79f1")!,
