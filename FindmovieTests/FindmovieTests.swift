@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import TabBar2_0
+@testable import Findmovie
 
 class FindmovieTests: XCTestCase {
 

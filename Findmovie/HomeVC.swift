@@ -5,7 +5,30 @@
 //  Created by Kaung Thu Khant on 11/6/21.
 //
 
-import UIKit
+import SwiftUI
+
+
+struct ContentView: View {
+    var body: some View{
+        NavigationView{
+            ScrollView{
+                HStack{
+                    ForEach(0..<10){ num in
+                        Text(num.description)
+                    }
+                }
+            }.navigationTitle("Movie Carousel")
+        }
+    }
+}
+
+struct ContentViewPreview: PreviewProvider{
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+
 
 class HomeVC: UIViewController {
     
